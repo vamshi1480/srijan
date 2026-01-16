@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srijan</title>
+  <style>
+   /* ===== Global Styles ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #fdf2f8);
+  color: #1f2937;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+header h1 {
+  margin: 10px 0 5px;
+  font-size: 34px;
+}
+
+header p {
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+/* ===== Navigation ===== */
+nav {
+  background: #312e81;
+  padding: 12px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: #e0e7ff;
+  text-decoration: none;
+  margin: 0 14px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background: #e0e7ff;
+  color: #312e81;
+}
+
+/* ===== Sections ===== */
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+  animation: fadeUp 0.6s ease both;
+}
+
+/* ===== Headings & Text ===== */
+h2 {
+  color: #4338ca;
+  margin-bottom: 15px;
+  border-left: 5px solid #6366f1;
+  padding-left: 10px;
+}
+
+p {
+  line-height: 1.7;
+  margin: 6px 0;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #111827;
+  color: #d1d5db;
+  text-align: center;
+  padding: 18px;
+  font-size: 14px;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 26px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 6px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="p.jpg" alt="Student Photo" style="width:140px;height:140px;border-radius:50%;border:4px solid white;margin-bottom:15px;object-fit:cover;" />
+    <h1>CH SRIJAN</h1>
+    <p>7th Class Student | Future Achiever 🌟</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#subjects">Subjects</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+<section id="about">
+<div class="card">
+<h2>About Me</h2>
+<p><strong>Name:</strong> CH SRIJAN</p>
+<p><strong>Class:</strong> 7th Standard</p>
+<p><strong>School Name:</strong> Sangamitra High School</p>
+<p><strong>Born Place:</strong> Sangareddy</p>
+<p><strong>Address:</strong> 4-50, Raikode, Raikode, Sangareddy, Telangana, 502257</p>
+<p><strong>Father Name:</strong> Narsimulu</p>
+<p><strong>Mother Name:</strong> Swetha</p>
+<p><strong>Languages Known:</strong> Telugu, Hindi, English</p>
+<p><strong>About:</strong> I am a curious and enthusiastic student who enjoys learning new subjects, participating in school activities, and improving my skills every day.</p>
+</div>
+</section>
+
+  <section id="subjects">
+    <div class="card">
+      <h2>Favorite Subjects</h2>
+      <ul>
+        <li>Mathematics</li>
+        <li>Science</li>
+        <li>English</li>
+        <li>Social Studies</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="hobbies">
+    <div class="card">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Drawing 🎨</li>
+        <li>Playing Cricket 🏏</li>
+        <li>Reading Story Books 📚</li>
+        <li>Watching Educational Videos 🎥</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <div class="card">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Won school drawing competition</li>
+        <li>Good performance in mathematics exams</li>
+        <li>Participated in science fair</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>Contact</h2>
+      <p><strong>School:</strong> Sangamitra High School</p>
+      <p><strong>Class:</strong> 7th Standard</p>
+      <p><strong>Email:</strong> srijan@gmail.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Student Bio | Designed by Vamshi Krishna</p>
+  </footer>
+
+</body>
+</html>
+
